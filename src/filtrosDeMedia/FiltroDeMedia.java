@@ -56,7 +56,7 @@ public class FiltroDeMedia implements Runnable {
 	}
 	
 	public void leitura() throws IOException {
-		FileReader fr = new FileReader("C:\\Users\\Murilo\\Downloads\\glassware_noisy.ascii.pgm");
+		FileReader fr = new FileReader("C:\\Users\\guiaa\\Documents\\semestre 2022.1\\sistemas operacionais\\workspace-so\\projeto-threads\\utils\\glassware_noisy.ascii.pgm");
 		BufferedReader br = new BufferedReader(fr);
 		
 		tipo = br.readLine();
@@ -96,7 +96,7 @@ public class FiltroDeMedia implements Runnable {
 	}
 	
 	public void escrever() throws IOException {
-		FileWriter fw = new FileWriter("C:\\Users\\Murilo\\Downloads\\Filtro" + Integer.toString(n));
+		FileWriter fw = new FileWriter("C:\\Users\\guiaa\\Documents\\semestre 2022.1\\sistemas operacionais\\workspace-so\\projeto-threads\\utils\\Filtro" + Integer.toString(n));
 		BufferedWriter bw = new BufferedWriter(fw);
 		
 		bw.write(tipo);
